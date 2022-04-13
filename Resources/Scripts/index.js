@@ -88,7 +88,7 @@ addSong = function(){
 
 function putSong(favorited){
     // const putSongUrl = "https://localhost:5001/api/song/"+favorited;
-    const putSongUrl = "https://cacook7bigalplaylistapi.herokuapp.com/api/song"+favorited;
+    const putSongUrl = "https://cacook7bigalplaylistapi.herokuapp.com/api/song/"+favorited;
     const SongFavorited = document.getElementById("edit"+favorited);
 
     fetch(putSongUrl,{
