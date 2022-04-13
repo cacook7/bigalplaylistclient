@@ -17,7 +17,7 @@ setSongs = function(songs){
     var html = ``;
     songs.forEach((song)=>{
         html += `<div class="card col-md-4 bg-dark text-white">`;
-			html += `<img src="./resources/images/music.jpeg" class="card-img" alt="...">`;
+			html += `<img src="./Resources/Images/music.jpeg" class="card-img" alt="...">`;
 			html += `<div class="card-img-overlay">`;
 			html += `<h5 class="card-title"><spann>`+song.title+"<h6>Favorited =</h6>"+song.favorited+`<spann></h5>`;
             html += `<button id="myBtn" class="btn btn-dark" onclick="putSong(${song.id})">☆</button>`;
@@ -48,7 +48,7 @@ function findSongs(){
 		json.forEach((song) => {
             console.log(song.title)
             html += `<div class="card col-md-4 bg-dark text-white">`;
-			html += `<img src="./resources/images/music.jpeg" class="card-img" alt="...">`;
+			html += `<img src="./Resources/Images/music.jpeg" class="card-img" alt="...">`;
 			html += `<div class="card-img-overlay">`;
 			html += `<h5 class="card-title">`+song.title+`</h5>`;
             html += `</div>`;
