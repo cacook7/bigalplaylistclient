@@ -1,5 +1,6 @@
 function handleOnLoad(){
-    const songUrl = "https://localhost:5001/api/song";
+    // const songUrl = "https://localhost:5001/api/song";
+    const songUrl = "https://cacook7bigalplaylistapi.herokuapp.com/api/song";
 
     fetch(songUrl).then(function(response){
         return response.json();
@@ -65,7 +66,8 @@ function findSongs(){
 }
 
 addSong = function(){
-    var SongUrl = "https://localhost:5001/api/song/";
+    // var SongUrl = "https://localhost:5001/api/song/";
+    var SongUrl = "https://cacook7bigalplaylistapi.herokuapp.com/api/song";
     let songTitle = document.getElementById("song").value;
 
     fetch(SongUrl,{
@@ -85,7 +87,8 @@ addSong = function(){
 }
 
 function putSong(favorited){
-    const putSongUrl = "https://localhost:5001/api/song/"+favorited;
+    // const putSongUrl = "https://localhost:5001/api/song/"+favorited;
+    const putSongUrl = "https://cacook7bigalplaylistapi.herokuapp.com/api/song"+favorited;
     const SongFavorited = document.getElementById("edit"+favorited);
 
     fetch(putSongUrl,{
@@ -105,7 +108,8 @@ function putSong(favorited){
 }
 
 function removeSong(id){
-    const deleteSongUrl = "https://localhost:5001/api/song/"+id;
+    // const deleteSongUrl = "https://localhost:5001/api/song/"+id;
+    const deleteSongUrl = "https://cacook7bigalplaylistapi.herokuapp.com/api/song/"+id;
 
     fetch(deleteSongUrl,{
         method: "DELETE",
